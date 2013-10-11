@@ -116,22 +116,22 @@ $grayMediumLight: #eaeaea;
 	@include box_sizing;
 	}
 
-	/* sidebar */
+ /* sidebar */
 
 	aside {
-	section {
-	padding: 10px 0;
-	border-top: 1px solid $grayLighter;
-	&:first-child {
-	border: 0;
-	padding-top: 0;
-	}
+		section {
+		padding: 10px 0;
+		border-top: 1px solid $grayLighter;
+		&:first-child {
+		border: 0;
+		padding-top: 0;
+		}
 
-	span {
-	display: block;
-	margin-bottom: 3px;
-	line-height: 1;
-	}
+		span {
+		display: block;
+		margin-bottom: 3px;
+		line-height: 1;
+		}
 
 		h1 {
 		font-size: 1.6em;
@@ -144,7 +144,37 @@ $grayMediumLight: #eaeaea;
 		.gravatar {
 		float: left;
 		margin-right: 10px;
+	    }
+
+.stats {
+	overflow: auto;
+	a {
+		float: left;
+		padding: 0 10px;
+		border-left: 1px solid $grayLighter;
+		color: gray;
+		&:first-child {
+		padding-left: 0;
+		border: 0;
+		}
+		&:hover {
+	text-decoration: none;
+	color: $blue;
 	}
+	}
+	strong {
+	display: block;
+	}
+	}
+	.user_avatars {
+	overflow: auto;
+	margin-top: 10px;
+	.gravatar {
+	margin: 1px 1px;
+	}
+}
+
+
 
 /* forms */
 
@@ -184,6 +214,8 @@ input, textarea, select, .uneditable-input {
 		}
 	}
 }
+
+
 /* microposts */
 .microposts {
 list-style: none;
@@ -209,3 +241,4 @@ height: 100px;
 margin-bottom: 5px;
 }
 }
+
